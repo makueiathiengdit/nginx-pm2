@@ -2,6 +2,8 @@ import express from "express";
 
 const app = express();
 
+app.use(express.json());
+
 // log incoming request and timestamps
 app.use((req, res, next) => {
   const now = new Date();
@@ -12,7 +14,7 @@ app.use((req, res, next) => {
 
 const PORT = 8000;
 app.get("/", async (req, res) => {
-  res.send("Backend: up and running mate.");
+  res.json({ message: "Backend: up and running mate." });
 });
 
 app.listen(PORT, () => {
