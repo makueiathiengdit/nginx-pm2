@@ -1,0 +1,22 @@
+{
+  "name": "backend",
+  "description": "backend running on nginx and pm2",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "backend",
+    "pm2",
+    "nginx",
+    "self-hosting"
+  ],
+  "author": "Awet Thon",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "type": "module"
+}
