@@ -14,6 +14,7 @@ app.use((req, res, next) => {
 
 const PORT = 8000;
 app.get("/", async (req, res) => {
+  res.setHeader("X-Powered-By", "Awet nginx");
   res.json({ message: "Backend: up and running mate." });
 });
 
