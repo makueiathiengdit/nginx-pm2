@@ -28,6 +28,11 @@ app.post("/data", async (req, res) => {
   res.json({ message: "Data saved successfully.", id: last_saved_idx });
 });
 
+app.get("/data", async (req, res) => {
+  res.setHeader("X-Powered-By", "Awet nginx");
+  res.json({ id: last_saved_idx });
+});
+
 app.listen(PORT, () => {
   console.log("Backend listening on port:", PORT);
 });

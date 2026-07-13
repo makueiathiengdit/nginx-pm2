@@ -15,7 +15,7 @@ const DashboardPage = async () => {
 
       <div className="border rounded p-2">
         <p>Message from backend </p>
-        <span className="text-green-500">{data.message}</span>
+        <span className="text-green-500">{data?.message || "-"}</span>
       </div>
     </div>
   );
